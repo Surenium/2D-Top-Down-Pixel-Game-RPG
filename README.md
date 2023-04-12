@@ -1,8 +1,9 @@
 # 2D-Top-Down-Pixel-Game-RPG
 
-## Goal
+## Preview
 
-Collect all the Coins to Win the Game! 
+
+
 
 
 
