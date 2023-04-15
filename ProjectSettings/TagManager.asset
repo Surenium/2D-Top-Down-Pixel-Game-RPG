@@ -47,9 +47,12 @@ TagManager:
   - name: Interactable
     uniqueID: 636650263
     locked: 0
-  - name: Actor
-    uniqueID: 172052007
-    locked: 0
   - name: Building
     uniqueID: 486173601
+    locked: 0
+  - name: Decor
+    uniqueID: 385581349
+    locked: 0
+  - name: Actor
+    uniqueID: 172052007
     locked: 0
