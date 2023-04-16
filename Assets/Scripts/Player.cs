@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
-public class Player : MonoBehaviour
+public class Player : Fighter
 {
     private BoxCollider2D boxCollider;
 
@@ -19,8 +17,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Reset MoveDelta
-        moveDelta = Vector3.zero;
+
 
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");

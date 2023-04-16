@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6762201032501681832}
   - component: {fileID: 6762201032501681833}
   - component: {fileID: 6762201032501681834}
-  - component: {fileID: 6762201032501681837}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 172052007
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: -1529776306, guid: cdfef43ae9cba7a4fb5fdf4017a34d5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -120,6 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28fc708954669ca48aa6220b599527df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitPoint: 10
+  maxHitPoint: 10
+  pushCooldown: 0.2
 --- !u!61 &6762201032501681834
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146,29 +148,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14824203, y: 0.22098938}
   m_EdgeRadius: 0
---- !u!114 &6762201032501681837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6762201032501681835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc2fc8988e65e984792cf4acdd5a3ef4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  filter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0

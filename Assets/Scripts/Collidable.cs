@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
+
 
 public class Collidable : MonoBehaviour
 {
@@ -33,7 +33,7 @@ public class Collidable : MonoBehaviour
 
     protected virtual void OnCollide(Collider2D coll)
     {
-        Debug.Log(coll.name);
+        Debug.Log("OnCollide was not implemented in " + this.name);
     }
 
 
