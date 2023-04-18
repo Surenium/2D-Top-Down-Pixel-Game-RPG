@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Mover : Fighter
 {
-    private BoxCollider2D boxCollider;
+    protected BoxCollider2D boxCollider;
     private Vector3 moveDelta;
     private RaycastHit2D hit;
     protected float ySpeed = 0.75f;

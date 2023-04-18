@@ -31601,6 +31601,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6762201032501681838, guid: aa092308c725c0d4a909d93ddfd3f633, type: 3}
   m_PrefabInstance: {fileID: 1799961254}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &935328770 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6762201032501681834, guid: aa092308c725c0d4a909d93ddfd3f633, type: 3}
+  m_PrefabInstance: {fileID: 1799961254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &935328771 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6762201032501681833, guid: aa092308c725c0d4a909d93ddfd3f633, type: 3}
+  m_PrefabInstance: {fileID: 1799961254}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28fc708954669ca48aa6220b599527df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &943807179
 GameObject:
   m_ObjectHideFlags: 0
@@ -31872,7 +31888,7 @@ GameObject:
   - component: {fileID: 1241697389}
   - component: {fileID: 1241697390}
   m_Layer: 9
-  m_Name: Square
+  m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72477,6 +72493,55 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1686598392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1686598394}
+  - component: {fileID: 1686598393}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1686598393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686598392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f036dfcbef23734192e73bd7df6f785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSprites: []
+  weaponSprites: []
+  weaponPrices: 
+  player: {fileID: 935328771}
+  Gems: 0
+--- !u!4 &1686598394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686598392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.608137, y: 0.11265856, z: -0.1316192}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1799961254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72484,6 +72549,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6762201032501681833, guid: aa092308c725c0d4a909d93ddfd3f633, type: 3}
+      propertyPath: boxCollider
+      value: 
+      objectReference: {fileID: 935328770}
     - target: {fileID: 6762201032501681834, guid: aa092308c725c0d4a909d93ddfd3f633, type: 3}
       propertyPath: m_EdgeRadius
       value: 0
@@ -72735,7 +72804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873313018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.647, y: 0.18, z: 0}
+  m_LocalPosition: {x: 3.004, y: 0.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -72755,9 +72824,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2a6c5cd9b937334e85c0f2912e41d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 10
-  maxHitpoint: 10
+  hitpoint: 3
+  maxHitpoint: 3
   pushRecoverySpeed: 0.2
+  triggerLength: 1.5
+  chaseLength: 3
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!1 &2071139456
 GameObject:
   m_ObjectHideFlags: 0
