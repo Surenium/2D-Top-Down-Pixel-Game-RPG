@@ -31678,7 +31678,7 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   damagePoint: 1
-  pushForce: 2
+  pushForce: 6
 --- !u!61 &943807182
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31887,6 +31887,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1241697389}
   - component: {fileID: 1241697390}
+  - component: {fileID: 1241697391}
   m_Layer: 9
   m_Name: Hitbox
   m_TagString: Untagged
@@ -31935,6 +31936,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.39966357, y: 0.29201692}
   m_EdgeRadius: 0
+--- !u!114 &1241697391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241697388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8243d349578da5c41bc6e26172875281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  damage: 1
+  pushForce: 4
 --- !u!1 &1528743139
 GameObject:
   m_ObjectHideFlags: 0
@@ -72553,6 +72582,10 @@ PrefabInstance:
       propertyPath: boxCollider
       value: 
       objectReference: {fileID: 935328770}
+    - target: {fileID: 6762201032501681833, guid: aa092308c725c0d4a909d93ddfd3f633, type: 3}
+      propertyPath: pushRecoverySpeed
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6762201032501681834, guid: aa092308c725c0d4a909d93ddfd3f633, type: 3}
       propertyPath: m_EdgeRadius
       value: 0
@@ -72826,7 +72859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitpoint: 3
   maxHitpoint: 3
-  pushRecoverySpeed: 0.2
+  pushRecoverySpeed: 0.1
   triggerLength: 1.5
   chaseLength: 3
   filter:
