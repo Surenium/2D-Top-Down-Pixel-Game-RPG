@@ -9,6 +9,7 @@ public abstract class Mover : Fighter
     private RaycastHit2D hit;
     protected float ySpeed = 0.75f;
     protected float xSpeed = 1.0f;
+ 
 
     protected virtual void Start()
     {
@@ -48,6 +49,9 @@ public abstract class Mover : Fighter
         {
             //Movement
             transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
+
         }
+
+    
     }
 }
