@@ -72579,9 +72579,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6762201032501681833, guid: aa092308c725c0d4a909d93ddfd3f633, type: 3}
+      propertyPath: hitpoint
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6762201032501681833, guid: aa092308c725c0d4a909d93ddfd3f633, type: 3}
       propertyPath: boxCollider
       value: 
       objectReference: {fileID: 935328770}
+    - target: {fileID: 6762201032501681833, guid: aa092308c725c0d4a909d93ddfd3f633, type: 3}
+      propertyPath: maxHitpoint
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6762201032501681833, guid: aa092308c725c0d4a909d93ddfd3f633, type: 3}
       propertyPath: pushRecoverySpeed
       value: 0.1
